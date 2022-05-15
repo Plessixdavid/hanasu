@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body { 
+  font-family: "Arial Black", Arial, Verdana, sans-serif;
+  background: url("img/exemple_maneki.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.checking{
+  /* rend responsive l'affichage */
+  display: flex;
+
+
+  color: #000000;
+
+}
+label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 18px;
+  width: 100%;
+}
+input[type="checkbox"]{
+  width: auto;
+  margin: 20px;
+}
+
+section{
+  display: flex;
+  /* centre l'element */
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* permet un affichage responsive */
+  display: flex;
+  /* donne une taile specifique au container */
+  /* permet un arrangement lors de la reduction de l'ecran en mode colonne */
+  flex-direction: row;
+  /* centre l'element */
+  justify-content: center;
+  align-items: center;
+  /* permet un rangement en mode grille */
+  flex-wrap: wrap;
+  /* créer une marge pour la grille */
+  gap: 50px;
+  font-size: 30px;
+  height: 40vh;
+  margin-top: 263px;
+  padding-left: 18px;
+}
+.choice{
+  height:10vh;
+  width:35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.check{
+  display: flex;
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+}
+button{
+  display: flex;
+  width: 150px;
+  height: 90px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  font-size: larger;
+}
+
+.child2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 150px;
+  background-color: aliceblue;
+}
+
+.img{
+    /* contraint un taille maximal par rapport à la taille du container */
+    width: 150px;
+    max-height: 150px;
+    border-radius: 150px;
+}
+
+a{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: medium;
+  background-color:rgba(0,0,0,0.8) ;
+  color: white;
+  border-radius: 45px;
+  padding: 10px;
+  border-style: solid;
+  border-color: red;
+}
+
+@media all and (max-width: 991px)
+{
+
+  .container 
+  {
+      gap: 25px;
+      margin-top: 170px;
+  }
+  .choice{
+    
+    width: 50vw;
+  }
+  .img
+  {
+    /* contraint un taille maximal par rapport à la taille du container */
+    width: 130px;
+    max-height: 130px;
+  }
+ 
+  label 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+    font-size: small;
+  }
+ 
+  h3{
+    font-size:small;
+  }
+  p{
+    font-size:12px;
+  }
+
+  button{
+    width: 75px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: medium;
+  }
+}
